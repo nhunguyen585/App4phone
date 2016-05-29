@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>App4Phonev2</display-name>
+  <welcome-file-list>
+    <welcome-file>/Views/Android/jsp/app4phone.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Homepage app4phone</servlet-name>
+    <jsp-file>/Views/Android/jsp/app4phone.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Homepage app4phone</servlet-name>
+    <url-pattern>/jsp_app4phone</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet app4phone</servlet-name>
+    <servlet-class>Controller.serv_app4phone</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet app4phone</servlet-name>
+    <url-pattern>/serv_app4phone</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Controller.serv_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/serv_login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Controller.serv_logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/serv_logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Controller.serv_register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/serv_register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android Game New</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_gamenew.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android Game New</servlet-name>
+    <url-pattern>/jsp_android_gamenew</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android Game New</servlet-name>
+    <servlet-class>Controller.serv_android_gamenew</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android Game New</servlet-name>
+    <url-pattern>/serv_android_gamenew</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android Game Top</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_gametop.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android Game Top</servlet-name>
+    <url-pattern>/jsp_android_gametop</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android Game Top</servlet-name>
+    <servlet-class>Controller.serv_android_gamehot</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android Game Top</servlet-name>
+    <url-pattern>/serv_android_gamehot</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android App tin tuc</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_apptintuc.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android App tin tuc</servlet-name>
+    <url-pattern>/jsp_android_apptintuc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android App tin tuc</servlet-name>
+    <servlet-class>Controller.serv_android_apptintuc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android App tin tuc</servlet-name>
+    <url-pattern>/serv_android_apptintuc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android App lien lac</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_applienlac.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android App lien lac</servlet-name>
+    <url-pattern>/jsp_android_applienlac</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android App lien lac</servlet-name>
+    <servlet-class>Controller.serv_android_applienlac</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android App lien lac</servlet-name>
+    <url-pattern>/serv_android_applienlac</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android App chuc nang</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_appchucnang.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android App chuc nang</servlet-name>
+    <url-pattern>/jsp_android_appchucnang</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android App chuc nang</servlet-name>
+    <servlet-class>Controller.serv_android_appchucnang</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android App chuc nang</servlet-name>
+    <url-pattern>/serv_android_appchucnang</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android Book</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_book.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android Book</servlet-name>
+    <url-pattern>/jsp_android_book</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet Android Book</servlet-name>
+    <servlet-class>Controller.serv_android_book</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet Android Book</servlet-name>
+    <url-pattern>/serv_android_book</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android view each game</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_view_each_game.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android view each game</servlet-name>
+    <url-pattern>/jsp_android_view_each_game</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet android view each game</servlet-name>
+    <servlet-class>Controller.serv_android_view_each_game</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet android view each game</servlet-name>
+    <url-pattern>/serv_android_view_each_game</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android view each app</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_view_each_app.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android view each app</servlet-name>
+    <url-pattern>/jsp_android_view_each_app</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet android view each app</servlet-name>
+    <servlet-class>Controller.serv_android_view_each_app</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet android view each app</servlet-name>
+    <url-pattern>/serv_android_view_each_app</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android view each book</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_view_each_book.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android view each book</servlet-name>
+    <url-pattern>/jsp_android_view_each_book</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet android view each book</servlet-name>
+    <servlet-class>Controller.serv_android_view_each_book</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet android view each book</servlet-name>
+    <url-pattern>/serv_android_view_each_book</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet android add</servlet-name>
+    <servlet-class>Controller.serv_andorid_add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet android add</servlet-name>
+    <url-pattern>/serv_android_add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet android search</servlet-name>
+    <servlet-class>Controller.serv_android_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet android search</servlet-name>
+    <url-pattern>/serv_android_search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Android search</servlet-name>
+    <jsp-file>/Views/Android/jsp/jsp_android_search.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Android search</servlet-name>
+    <url-pattern>/jsp_android_search</url-pattern>
+  </servlet-mapping>
+</web-app>
