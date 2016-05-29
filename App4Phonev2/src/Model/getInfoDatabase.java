@@ -21,7 +21,6 @@ public class getInfoDatabase {
 		return con.getData("select * from "+position+" where id='"+id+"'");
 	}
 	public static String checkAccount(String username, String password) throws ClassNotFoundException, SQLException{
-		//ConnectDatabase con = new ConnectDatabase();
 		connect con = new connect();
 		ResultSet rs = con.getData("select * from account where username='"+username+"' and password='"+password+"' ");
 		while(rs.next()){
@@ -38,12 +37,13 @@ public class getInfoDatabase {
 		return null;
 	}
 	public int addAccount(String name, String username, String password) throws Exception{
-		if(checkAccount(username, password) != null){
+		String pass = encodePassword.encode(password);
+		if(checkAccount(username, pass) != null){
 			return 0;
 		}else{
 			//ConnectDatabase con = new ConnectDatabase();
 			connect con = new connect();
-			con.updateData("insert into account values('"+username+"','"+password+"','"+name+"') ");
+			con.updateData("insert into account values('"+username+"','"+pass+"','"+name+"','user') ");
 			return 1;
 		}
 	}

@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding//WebContent/Views/Android/jsp/Hidden.jsp=UTF-8
+encoding//WebContent/Views/Android/jsp/header.jsp=UTF-8
 encoding//src/Controller/serv_login.java=UTF-8
 encoding//src/Controller/serv_register.java=UTF-8

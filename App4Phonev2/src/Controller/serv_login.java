@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import Model.encodePassword;
 import Model.getInfoDatabase;
 
 public class serv_login extends HttpServlet {
@@ -28,15 +29,13 @@ public class serv_login extends HttpServlet {
 			 url = (String) session.getAttribute("url");
 		}
 		session.removeAttribute("url");
-		if(username == "" || password == ""){
-			session.setAttribute("error", "Bạn chưa nhập đủ thông tin");
-		}
 		String name = null;
 		String admin = null;
 		try {
 			new getInfoDatabase();
-			name = getInfoDatabase.checkAccount(username, password);
-			admin = getInfoDatabase.checkAdmin(username, password);
+			String pass = encodePassword.encode(password);
+			name = getInfoDatabase.checkAccount(username, pass);
+			admin = getInfoDatabase.checkAdmin(username, pass);
 		} catch (ClassNotFoundException | SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
